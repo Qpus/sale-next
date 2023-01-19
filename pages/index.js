@@ -1,11 +1,19 @@
+import styles from '@/styles/Home.module.css'
+
 export default function Home(pivo) {
   return (
     <>
-      {pivo.pivo.map((p) => (
-        <li key={p.id}>
-          {p.name}
-        </li>
-      ))}
+      <main className={styles.main}>
+        <div className={styles.description}>
+          <ul>
+            {pivo.pivo.map((p) => (
+              <li key={p.id}>
+                {p.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </main>
     </>
   )
 }
