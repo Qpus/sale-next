@@ -19,7 +19,7 @@ jobs:
       - name: Installing dependencies
         run: npm install -g npx --force
       - name: Building project
-        run: npx next export
+        run: npm run build
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
