@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: "16"
       - name: Installing dependencies
-        run: npm install
+        run: npm install -g npx
       - name: Building project
         run: npx next export
       - name: Configure AWS Credentials
